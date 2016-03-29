@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  manufacturer: MyText
+  price: 9.99
+
+two:
+  description: MyText
+  manufacturer: MyText
+  price: 9.99
