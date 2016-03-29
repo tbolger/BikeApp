@@ -28,20 +28,9 @@
                     <%=link_to "View Bikes To Rent" , root_url %>
                 </li>
                 <li>
-                    <%=link_to "Add Bike" , new_bike_path %>
+                    <%=link_to "Edit Bikes" , edit_bike_path %>
                 </li>
                 <li>
-                    <%=link_to "Add Bike" , new_bike_path %>
-                </li>
-                <li>
-                    <%=link_to "Add Bike" , new_bike_path %>
-                </li>
-                <li>
-                    <%=link_to "Add Bike" , new_bike_path %>
-                </li>
-                <li>
-                    <%=link_to "Add Bike" , new_bike_path %>
-                </li>
                     <%=link_to "Log Out" , destroy_user_session_path, method: :delete , confirm: "Are You Sure?" %>
                 </li>
 
@@ -63,11 +52,13 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Bike Rental Application</h1>
+                        <h1 class="title">Bike Rental Application</h1>
                             <% flash.each do |a, b| %>
-                            <div class="alert alert-success"><%= b %> </div>
-                                <% end %>
-                       		       <%= yield %>
+                                <div class="alert alert-success"><%= b %> </div>
+                                    <% end %>
+                                    <br>
+                                    <hr>
+                       		           <%= yield %>
                         
                     </div>
                 </div>
