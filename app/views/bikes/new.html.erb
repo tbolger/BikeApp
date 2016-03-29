@@ -1,2 +1,19 @@
-<h1>Bikes#new</h1>
-<p>Find me in app/views/bikes/new.html.erb</p>
+<h1>New Bike</h1>
+<div class="page-wrapper">
+	<div class="container-fluid">
+		<div class="col-xl-3"></div>
+			<div class="col-xl-10">
+				<%= form_for @bike do |f| %>
+					<%= f.label :description %>
+					<%= f.text_area :description %>
+					<br>
+					<%= f.label :manufacturer %>
+					<%= f.text_area :manufacturer %>
+					<hr>
+					<br>
+					<%= f.submit %>
+				<% end %>
+			</div>
+		<div class="col-xl-3"></div>
+	</div>
+</div>

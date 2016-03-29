@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'paperclip', '~> 4.3', '>= 4.3.2'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
