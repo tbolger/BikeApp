@@ -1,11 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  total: 9.99
-  total{12,3}: MyString
-  order_status_id: 
+  is_avalailable: false
+  rental_start_date: 2016-03-31
+  rental_end_date: 2016-03-31
+  user_id: 
+  bike_id: 
 
 two:
-  total: 9.99
-  total{12,3}: MyString
-  order_status_id: 
+  is_avalailable: false
+  rental_start_date: 2016-03-31
+  rental_end_date: 2016-03-31
+  user_id: 
+  bike_id: 

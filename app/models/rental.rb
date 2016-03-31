@@ -1,4 +1,4 @@
 class Rental < ActiveRecord::Base
-  belongs_to :order_status
-  has_many :bikes
+  belongs_to :user
+  belongs_to :bike
 end

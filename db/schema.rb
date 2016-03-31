@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160329153647) do
+ActiveRecord::Schema.define(version: 20160331163019) do
 
   create_table "bikes", force: :cascade do |t|
     t.text     "description"
@@ -24,6 +24,19 @@ ActiveRecord::Schema.define(version: 20160329153647) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
   end
+
+  create_table "rentals", force: :cascade do |t|
+    t.boolean  "is_avalailable"
+    t.date     "rental_start_date"
+    t.date     "rental_end_date"
+    t.integer  "user_id"
+    t.integer  "bike_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  add_index "rentals", ["bike_id"], name: "index_rentals_on_bike_id"
+  add_index "rentals", ["user_id"], name: "index_rentals_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
