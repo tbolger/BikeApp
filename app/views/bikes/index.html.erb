@@ -2,14 +2,13 @@
 
 	<div class="container bike">
 	 <div class="col-lg-4"></div>
-		<div class="col-lg-6">
+		<div class="col-lg-6 product-list">
+			<h2>Model : <%= x.manufacturer %></h2> 
 			<%= image_tag x.image.url(:medium),class:"img-responsive" %>
-			<h2>Description :</h2> 
-			<h2><%= x.description %></h2>
-			<h2>Model :</h2> 
-			<h2><%= x.manufacturer %></h2>
-			<h2>Price :</h2> 
-			<h2><%= x.price %></h2>
+			<td>Description :</td> 
+			<td><%= x.description %></td>
+			<td>Price :</td> 
+			<td><%= x.price %></td>
 		</div>
 		<div class="col-lg-2"></div>
 	</div>
